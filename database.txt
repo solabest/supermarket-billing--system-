@@ -1,0 +1,3 @@
+ 1 bread 50 20
+ 2 juice 50 15
+ 3 cheeze 45 5
