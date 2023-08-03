@@ -278,43 +278,57 @@ void shopping::edit(){
 }
 }//end of edit
 
-void shopping::rem(){
-    fstream data,data1;
-    int pkey,token=0;
+void shopping::rem() {
+    fstream data, data1;
+    int pkey, token = 0;
 
-// <<<<<<< HEAD
-    cout<<"\n\n\t ***Delete product***";
-    cout<<"\n\n\t Enter product code: ";
-    cin>>pkey;
-    data.open("database.txt",ios::in);
-    if(!data){
-        cout<<"File doesn't exit!";
+    cout << "\n\n\t ***Delete product***";
+    cout << "\n\n\t Enter product code: ";
+    cin >> pkey;
+
+    data.open("database.txt", ios::in);
+    if (!data) {
+        cout << "File doesn't exist!";
     }
     else {
-        data1.open("database1.txt",ios::app|ios::out);
-        data>>pcode>>pname>>price>>discount;
+        data1.open("database1.txt", ios::app | ios::out);
+        data >> pcode >> pname >> price >> discount;
 
-        while(!data.eof()){
-            if(pcode==pkey){
-                cout<<"\n\n\t Product deleted successfully!";
-                token++;
+        while (!data.eof()) {
+            if (pcode == pkey) {
+                cout << "\n\n\t Product found:";
+                cout << "\n\t Product code: " << pcode;
+                cout << "\n\t Product name: " << pname;
+                cout << "\n\t Product price: " << price;
+                cout << "\n\t Discount: " << discount;
+                cout << "\n\n\t Are you sure you want to delete this product? (y/n): ";
+
+                char confirm;
+                cin >> confirm;
+                if (tolower(confirm) == 'y') {
+                    cout << "\n\n\t Product deleted successfully!";
+                    token++;
+                }
+                else {
+                    data1 << " " << pcode << " " << pname << " " << price << " " << discount << endl;
+                }
             }
             else {
-                data1<<" "<<pcode<<" "<<pname<<" "<<price<<" "<<discount<<endl;
+                data1 << " " << pcode << " " << pname << " " << price << " " << discount << endl;
             }
-            data>>pcode>>pname>>price>>discount;
+            data >> pcode >> pname >> price >> discount;
         }
-       data.close();
-       data1.close();
+        data.close();
+        data1.close();
 
-     remove("database.txt");
-     rename("database1.txt","database.txt");
-        if (token==0){
-    cout<<"\n\n Product is not found!";
-                     }
+        remove("database.txt");
+        rename("database1.txt", "database.txt");
+        if (token == 0) {
+            cout << "\n\n Product is not found!";
+        }
     }
+}// end of rem
 
-}//end of remove product
 
 
 void shopping:: list(){
