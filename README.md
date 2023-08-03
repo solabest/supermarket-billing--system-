@@ -55,4 +55,4 @@ Once they are done, the program generates a receipt with the details of the purc
 This project is meant for school project purposes and not be suitable for production-level use. It lacks some essential features such as data validation, error handling, and secure storage of passwords.
 
 
- # * TECH TITANS * 
+   #  TECH TITANS 
