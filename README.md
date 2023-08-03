@@ -33,11 +33,11 @@ g++ Supermarket project.cpp -o supermarket-billing-system
 Administrators can log in using their email and password.
 Available administrator credentials:
 
-Email: **soltad65@gmail.com**, Password: **sola1234**
-Email: **zekud@gmail.com** , Password: **zeku1234**
-Email: **yordi@gmail.com** , Password: **yordi1234**
-Email: **sura@gmail.com**, Password: **sura1234**
-Email: **sami@gmail.com**, Password: **sami1234**
+Email: **soltad65@gmail.com**, Password: **sola1234**  
+Email: **zekud@gmail.com** , Password: **zeku1234**  
+Email: **yordi@gmail.com** , Password: **yordi1234**  
+Email: **sura@gmail.com**, Password: **sura1234**  
+Email: **sami@gmail.com**, Password: **sami1234**  
 
 ### After logging in, administrators can:
 
