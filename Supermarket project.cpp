@@ -2,6 +2,8 @@
 #include<iostream>
 #include<fstream>
 #include <cstdlib>
+#include <map>
+#include <algorithm>
 
 using namespace std;
 class shopping {
@@ -25,8 +27,27 @@ private:
 void shopping::menu(){
     m:
 int choice;
+
+
+struct Admin{    //
 string email;
 string password;
+
+};
+
+   map<string , string > emailpassword;  // key value pair 
+
+   emailpassword["soltad65@gmail.com"] = "sola1234";
+   emailpassword["zekud@gmail.com"] = "zeku1234";
+   emailpassword["yordi@gmail.com"] = "yordi1234";
+   emailpassword["sura@gmail.com"] = "sura1234";
+   emailpassword["sami@gmail.com"] = "sami1234";
+
+
+
+
+
+Admin admins;
 
 cout<<"\t\t\t\t_____________________________________________________\n";
 cout<<"\t\t\t\t                                                     \n";
@@ -46,12 +67,12 @@ switch(choice){
     case 1:
        cout<<"\t\t\t Please login \n";
        cout<<"\t\t\t Enter Email :";
-       cin>>email;
+       cin>>admins.email;
        cout<<"\t\t\t Enter Password :";
-       cin>>password;
+       cin>>admins.password;
 
 
-       if(email=="soltad65@gmail.com" && password=="sola1234"){
+       if(emailpassword.count(admins.email)&& emailpassword[admins.email]== admins.password){
         administrator();
        }
        else {
@@ -261,7 +282,7 @@ void shopping::rem(){
     fstream data,data1;
     int pkey,token=0;
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
     cout<<"\n\n\t ***Delete product***";
     cout<<"\n\n\t Enter product code: ";
     cin>>pkey;
@@ -387,6 +408,6 @@ int main(){
     shopping s;
     s.menu();
 }
-=======
-}//end of remaning
->>>>>>> 92baa1ca4adb961784e050e52e8471b8ee363f59
+// =======
+// }//end of remaning
+// >>>>>>> 92baa1ca4adb961784e050e52e8471b8ee363f59
