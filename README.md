@@ -2,12 +2,12 @@
   This repository contains a simple command-line based supermarket management system written in C++. The program allows users to act as either administrators or buyers. Administrators can add, edit, and remove products from the supermarket inventory, while buyers can make purchases and generate receipts.
 
  ## Features
-1.Separate login for administrators and buyers.
-2.Administrators can add, edit, and remove products from the supermarket inventory.
-3.Buyers can browse available products, make purchases, and generate receipts.
-4.Discounts can be applied to products.
-5.Prerequisites
+1.Separate login for administrators and buyers.  
+2.Administrators can add, edit, and remove products from the supermarket inventory.  
+3.Buyers can browse available products, make purchases, and generate receipts.  
+4.Discounts can be applied to products.  
 
+*Prerequisites*  
 ## Before running the program, make sure you have the following:
 
 C++ compiler (such as g++ or MinGW on Windows) installed on your system.
