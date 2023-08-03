@@ -50,7 +50,7 @@ Buyers can make purchases from the supermarket.
 Buyers can add multiple products to their order.  
 Once they are done, the program generates a receipt with the details of the purchased items and the total amount.  
 
-*Notes*
+*Notes*  
   This program uses a simple text file (database.txt) to store the product details. The file is read and written to when adding, editing, or removing products.
 This project is meant for school project purposes and not be suitable for production-level use. It lacks some essential features such as data validation, error handling, and secure storage of passwords.
 
