@@ -29,7 +29,7 @@ void shopping::menu(){
 int choice;
 
 
-struct Admin{    //
+struct Admin{    
 string email;
 string password;
 
@@ -390,7 +390,7 @@ cout<<"\n___________________________________________\n";
  }while(choice=='y');
 
  cout<<"\n\n\t\t\t________________________RECEIPT________________________\n";
- cout<<"\nProduct No\t Product name\t Product Quantity\t Price\t Amount\tAmount with discount\n";
+ cout<<"\nProduct No\t Product name\t Product Quantity\t Price\t Amount\t  Amount with discount\n";
 
  for(int i=0;i<c;i++){
 
@@ -402,7 +402,7 @@ while(!data.eof()){
         amount=price*arrq[i];
         discount=amount-(amount*discount/100);
         total+=discount;
-        cout<<"\n"<<pcode<<"\t\t"<<pname<<"\t\t"<<arrq[i]<<"\t\t"<<price<<"\t"<<amount<<"\t\t"<<discount;
+        cout<<"\n"<<pcode<<"      \t\t"<<pname<<"   \t\t"<<arrq[i]<<"   \t\t   "<<price<<"  \t"<<amount<<"   \t\t"<<discount;
     }
      data>>pcode>>pname>>price>>discount;
 
@@ -422,6 +422,4 @@ int main(){
     shopping s;
     s.menu();
 }
-// =======
-// }//end of remaning
-// >>>>>>> 92baa1ca4adb961784e050e52e8471b8ee363f59
+
