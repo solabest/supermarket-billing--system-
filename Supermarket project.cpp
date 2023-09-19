@@ -35,7 +35,7 @@ string password;
 
 };
 
-   map<string , string > emailpassword;  // key value pair 
+   map<string , string > emailpassword;  // emailpassword to store email-password pairs
 
    emailpassword["soltad65@gmail.com"] = "sola1234";
    emailpassword["zekud@gmail.com"] = "zeku1234";
